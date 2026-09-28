@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - BeautyOfBeaches</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg custom-navbar" id="mainNav">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center" href="index.html">
+<img alt="BeautyOfBeaches logo" class="me-2" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230f7c7c'/%3E%3Cpath d='M30 35 L50 20 L70 35 L70 65 L50 80 L30 65 Z' fill='%23f5e6d3'/%3E%3Cpath d='M40 45 L60 45 L60 60 L40 60 Z' fill='%23f4a460'/%3E%3C/svg%3E"/>
+<span>BeautyOfBeaches</span>
+</a>
+<button class="navbar-toggler border-0" data-bs-target="#navMenu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="beachDropdown" role="button">
+<i class="fas fa-umbrella-beach me-1"></i> Beaches
+                        </a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="north.html"><i class="fas fa-snowflake"></i> North</a></li>
+<li><a class="dropdown-item" href="south.html"><i class="fas fa-sun"></i>
+                                    South</a></li>
+<li><a class="dropdown-item" href="east.html"><i class="fas fa-cloud-sun"></i> East</a></li>
+<li><a class="dropdown-item" href="west.html"><i class="fas fa-moon"></i>
+                                    West</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="resourceDropdown" role="button">
+<i class="fas fa-compass me-1"></i> Resources
+                        </a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+<li><a class="dropdown-item" href="feedback.html"><i class="fas fa-comment"></i> Feedback</a></li>
+<li>
+<hr class="dropdown-divider"/>
+</li>
+<li><a class="dropdown-item" href="queries.html"><i class="fas fa-question-circle"></i> Queries</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="aboutDropdown" role="button">
+<i class="fas fa-info-circle me-1"></i> About
+                        </a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="about.html"><i class="fas fa-flag"></i>
+                                    About Us</a></li>
+<li><a class="dropdown-item" href="contact.html"><i class="fas fa-address-card"></i> Contact</a></li>
+<li><a class="dropdown-item" href="sitemap.html"><i class="fas fa-sitemap"></i> Sitemap</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link btn-bookings-nav" href="my-booking.html"><i class="fas fa-calendar-check"></i> My Bookings</a>
+</li>
+</ul>
+<div class="navbar-actions">
+<button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i> <span class="d-none d-lg-inline">Dark</span></button>
+<div class="currency-selector">
+<i class="fas fa-dollar-sign"></i>
+<select id="currencySelect">
+<option selected="" value="USD">USD ($)</option>
+<option value="EUR">EUR (€)</option>
+<option value="GBP">GBP (£)</option>
+<option value="INR">INR (₹)</option>
+<option value="JPY">JPY (¥)</option>
+<option value="AUD">AUD (A$)</option>
+<option value="CAD">CAD (C$)</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</nav><section class="page-section active" id="home">
+<div class="hero-section">
+<div class="container hero-content">
+<h1>Discover <span>Paradise</span></h1>
+<p>We're on a mission to help you find your perfect slice of paradise. Come along!</p>
+<div class="carousel slide hero-carousel" data-bs-ride="carousel" id="heroCarousel">
+<div class="carousel-indicators">
+<button class="active" data-bs-slide-to="0" data-bs-target="#heroCarousel" type="button"></button>
+<button data-bs-slide-to="1" data-bs-target="#heroCarousel" type="button"></button>
+<button data-bs-slide-to="2" data-bs-target="#heroCarousel" type="button"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active"><img alt="Tropical beach" class="d-block w-100" src="https://i.pinimg.com/736x/fd/88/f7/fd88f773581d048b4d991cbd457dfdb4.jpg"/></div>
+<div class="carousel-item"><img alt="Palm beach" class="d-block w-100" src="https://i.pinimg.com/736x/85/50/8a/85508a7fe438e204d3314220d6cc7f20.jpg"/></div>
+<div class="carousel-item"><img alt="Sunset beach" class="d-block w-100" src="https://i.pinimg.com/736x/4d/75/a9/4d75a94b352bb5dfc6677a0c338a3829.jpg"/></div>
+</div>
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#heroCarousel" type="button"><span class="carousel-control-prev-icon"></span></button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#heroCarousel" type="button"><span class="carousel-control-next-icon"></span></button>
+</div>
+<div class="mt-4">
+<a class="btn btn-light btn-lg rounded-pill px-5 me-2 fw-bold" href="gallery.html" style="color: var(--primary);"><i class="fas fa-images me-2"></i> View Gallery</a>
+<a class="btn btn-outline-light btn-lg rounded-pill px-5 fw-bold" href="feedback.html"><i class="fas fa-comment me-2"></i> Feedback</a>
+</div>
+</div>
+</div>
+<div class="container py-5">
+<div class="text-center mb-5">
+<h2 class="section-title">Explore by Zone</h2>
+<p class="section-subtitle">Find your perfect beach – from icy arctic shores to tropical paradise
+                    </p>
+</div>
+<div class="row g-4">
+<div class="col-md-3 col-sm-6">
+<a class="text-decoration-none zone-card-link" href="north.html">
+<div class="zone-card card h-100">
+<img alt="North beach" class="card-img-top" src="https://i.pinimg.com/736x/20/ff/4b/20ff4bed5d3692a32014b2f29ab462e6.jpg"/>
+<div class="card-body text-center"><span class="zone-badge">Zone</span>
+<h5 class="card-title mt-2">North</h5>
+<p class="card-text small">Arctic shores</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-3 col-sm-6">
+<a class="text-decoration-none zone-card-link" href="south.html">
+<div class="zone-card card h-100">
+<img alt="South beach" class="card-img-top" src="https://i.pinimg.com/736x/63/b5/53/63b55318649c25d67488ecbd995887ee.jpg"/>
+<div class="card-body text-center"><span class="zone-badge">Zone</span>
+<h5 class="card-title mt-2">South</h5>
+<p class="card-text small">Tropical paradises</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-3 col-sm-6">
+<a class="text-decoration-none zone-card-link" href="east.html">
+<div class="zone-card card h-100">
+<img alt="East beach" class="card-img-top" src="https://i.pinimg.com/1200x/ad/bb/c3/adbbc3ee8f9f25446d333a4dcf4213e4.jpg"/>
+<div class="card-body text-center"><span class="zone-badge">Zone</span>
+<h5 class="card-title mt-2">East</h5>
+<p class="card-text small">Sunrise shores</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-3 col-sm-6">
+<a class="text-decoration-none zone-card-link" href="west.html">
+<div class="zone-card card h-100">
+<img alt="West beach" class="card-img-top" src="https://i.pinimg.com/736x/30/7b/a8/307ba8ddf8bb75d8d1c72c1715069abf.jpg"/>
+<div class="card-body text-center"><span class="zone-badge">Zone</span>
+<h5 class="card-title mt-2">West</h5>
+<p class="card-text small">Sunsets &amp; cliffs</p>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="row mt-5 g-4 justify-content-center">
+<div class="col-lg-10">
+<div class="ad-section bg-light p-4 rounded-4 h-100">
+<h5 class="text-center mb-4 fw-bold" style="color: var(--primary-dark);"><i class="fas fa-plane me-2"></i> Plan Your Trip</h5>
+<div class="row g-3">
+<div class="col-md-4"><a class="ad-card p-4 d-block" href="https://www.busbud.com" rel="noopener" target="_blank"><i class="fas fa-bus fa-2x mb-2"></i>
+<h6>Bus Packages</h6>
+<p class="small text-muted mb-0">Affordable tours worldwide</p>
+</a></div>
+<div class="col-md-4"><a class="ad-card p-4 d-block" href="https://www.emirates.com" rel="noopener" target="_blank"><i class="fas fa-plane fa-2x mb-2"></i>
+<h6>Flight Deals</h6>
+<p class="small text-muted mb-0">Book with Emirates</p>
+</a></div>
+<div class="col-md-4"><a class="ad-card p-4 d-block" href="https://www.royalcaribbean.com" rel="noopener" target="_blank"><i class="fas fa-ship fa-2x mb-2"></i>
+<h6>Cruise Offers</h6>
+<p class="small text-muted mb-0">Royal Caribbean</p>
+</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+    <div class="footer-ticker">
+        <div class="container">
+            <div class="ticker-content">
+                <span><i class="fas fa-calendar-alt"></i> <span id="tickerDate"></span></span>
+                <span><i class="fas fa-clock"></i> <span id="tickerTime"></span></span>
+                <span><i class="fas fa-map-pin"></i> <span id="tickerLocation">Detecting location…</span></span>
+                <span><i class="fas fa-umbrella-beach"></i> Explore beaches</span>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-bottom">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 <strong>BeautyOfBeaches</strong>. Made with
+                <i class="fas fa-heart" style="color:#ff6b6b;"></i> for beach lovers.
+            </p>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
